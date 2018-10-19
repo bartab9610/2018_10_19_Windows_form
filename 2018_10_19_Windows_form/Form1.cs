@@ -28,6 +28,7 @@ namespace _2018_10_19_Windows_form
         public void Mentes()
         {
             string tartalom = TextBox_content.Text;
+            SaveFileDialog.FileName = "";
             var eredmeny = SaveFileDialog.ShowDialog(this);
             if (eredmeny == DialogResult.OK)
             {
@@ -41,6 +42,7 @@ namespace _2018_10_19_Windows_form
         }
         public void Megnyitas()
         {
+            OpenFileDialog.FileName = "";
             if (OpenFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 TextBox_content.Text = File.ReadAllText(OpenFileDialog.FileName);

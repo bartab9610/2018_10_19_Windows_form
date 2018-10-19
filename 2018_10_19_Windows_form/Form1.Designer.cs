@@ -37,6 +37,7 @@
             // 
             // Button_open
             // 
+            this.Button_open.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_open.Location = new System.Drawing.Point(55, 21);
             this.Button_open.Name = "Button_open";
             this.Button_open.Size = new System.Drawing.Size(75, 23);
@@ -46,6 +47,7 @@
             // 
             // Button_save
             // 
+            this.Button_save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_save.Location = new System.Drawing.Point(160, 21);
             this.Button_save.Name = "Button_save";
             this.Button_save.Size = new System.Drawing.Size(75, 23);
@@ -67,6 +69,11 @@
             // OpenFileDialog
             // 
             this.OpenFileDialog.FileName = "openFileDialog1";
+            this.OpenFileDialog.Filter = "Szöveges fájlok (.txt)|*.txt|Minden fájl|*.*";
+            // 
+            // SaveFileDialog
+            // 
+            this.SaveFileDialog.Filter = "Szöveges fájlok|*.txt|Minden fájl|*.*";
             // 
             // Form1
             // 
